@@ -8,4 +8,4 @@ list:
 
 My undergraduate thesis (ongoing)
 
-4.Object detection based on Jetson TK2 (learning process)
+Object detection based on Jetson TK2 (learning process)
