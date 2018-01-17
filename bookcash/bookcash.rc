@@ -1,0 +1,364 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\bookcash.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\bookcash.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 bookcash"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "bookcash 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2016",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_BOOKCASH_DIALOG DIALOGEX 0, 0, 401, 221
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "图书收银系统"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,95,190,50,14
+    PUSHBUTTON      "取消",IDCANCEL,180,190,50,14
+    GROUPBOX        "图书订单信息",IDC_STATIC,7,7,299,167
+    CONTROL         "List1",IDC_ORDER_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,15,21,276,143
+    PUSHBUTTON      "添加",IDC_ADD_ORDER,324,14,50,14
+    PUSHBUTTON      "删除",IDC_DEL_ORDER,324,39,50,14
+    PUSHBUTTON      "重置",IDC_RESET_ORDER,324,64,50,14
+    COMBOBOX        IDC_CASH_TYPE,324,101,51,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",IDC_CASH_INFO,324,122,57,52,SS_SUNKEN
+    LTEXT           "收银模式：",IDC_STATIC,324,89,41,8
+    PUSHBUTTON      "图书管理系统",IDC_BOOKMANAGE,324,189,62,14
+END
+
+IDD_NEW_ORDER DIALOG DISCARDABLE  0, 0, 197, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新图书订单信息"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,37,79,50,14
+    PUSHBUTTON      "取消",IDCANCEL,102,79,50,14
+    LTEXT           "图书名称",IDC_STATIC,17,17,33,8
+    LTEXT           "图书单价",IDC_STATIC,17,38,33,8
+    LTEXT           "购买数量",IDC_STATIC,17,59,33,8
+    EDITTEXT        IDC_BOOK_NAME,60,15,115,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BOOK_PRICE,60,35,115,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PURCHASE_NUM,60,55,115,14,ES_AUTOHSCROLL
+END
+
+IDD_BILLING_DIALOG DIALOG DISCARDABLE  0, 0, 197, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书收费信息"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "计费",IDOK,37,79,50,14
+    PUSHBUTTON      "退出",IDCANCEL,102,79,50,14
+    LTEXT           "总金额：",IDC_STATIC,17,17,33,8
+    LTEXT           "交  费：",IDC_STATIC,17,38,33,8
+    LTEXT           "找  零：",IDC_STATIC,17,59,33,8
+    EDITTEXT        IDC_TOTAL_MONEY,60,15,115,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_PAY_MONEY,60,35,115,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAKE_CHANGE,60,55,115,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_CASH_REBATE_DIALOG DIALOG DISCARDABLE  0, 0, 187, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书打折活动"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,26,48,50,14
+    PUSHBUTTON      "取消",IDCANCEL,108,48,50,14
+    LTEXT           "打折率",IDC_STATIC,21,25,25,8
+    EDITTEXT        IDC_REBATE_RATE,62,23,96,14,ES_AUTOHSCROLL
+END
+
+IDD_CASH_RETURN_DIALOG DIALOG DISCARDABLE  0, 0, 187, 84
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书返利活动"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,63,50,14
+    PUSHBUTTON      "取消",IDCANCEL,101,63,50,14
+    LTEXT           "返利条件",IDC_STATIC,17,26,33,8
+    LTEXT           "返利金额",IDC_STATIC,17,43,33,8
+    EDITTEXT        IDC_CASH_LIMIT,63,23,100,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CASH_RETURN,63,41,99,14,ES_AUTOHSCROLL
+END
+
+IDD_CASH_OLD_DIALOG DIALOG DISCARDABLE  0, 0, 187, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "旧书甩卖活动"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,26,48,50,14
+    PUSHBUTTON      "取消",IDCANCEL,108,48,50,14
+    LTEXT           "旧书统一单价",IDC_STATIC,15,25,49,8
+    EDITTEXT        IDC_OLD_PRICE,74,23,96,14,ES_AUTOHSCROLL
+END
+
+IDD_CASH_BUYGET_DIALOG DIALOG DISCARDABLE  0, 0, 187, 84
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书买送活动"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,63,50,14
+    PUSHBUTTON      "取消",IDCANCEL,101,63,50,14
+    LTEXT           "购买数量条件",IDC_STATIC,15,20,49,8
+    LTEXT           "赠送图书数量",IDC_STATIC,15,37,49,8
+    EDITTEXT        IDC_CASH_BUY,74,17,100,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CASH_GET,74,35,99,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "bookcash Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "bookcash\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2016\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "bookcash.EXE\0"
+            VALUE "ProductName", "bookcash 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_BOOKCASH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 394
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_NEW_ORDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_BILLING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_CASH_REBATE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_CASH_RETURN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_CASH_OLD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_CASH_BUYGET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_BOOKCASH_DIALOG DLGINIT
+BEGIN
+    IDC_CASH_TYPE, 0x403, 9, 0
+0xa3b3, 0xe6b9, 0xfacf, 0xdbca, "\000" 
+    IDC_CASH_TYPE, 0x403, 9, 0
+0xbccd, 0xe9ca, 0xf2b4, 0xdbd5, "\000" 
+    IDC_CASH_TYPE, 0x403, 9, 0
+0xbccd, 0xe9ca, 0xb5b7, 0xfbc0, "\000" 
+    IDC_CASH_TYPE, 0x403, 9, 0
+0xc9be, 0xe9ca, 0xa6cb, 0xf4c2, "\000" 
+    IDC_CASH_TYPE, 0x403, 9, 0
+0xbccd, 0xe9ca, 0xf2c2, 0xcdcb, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 bookcash(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\bookcash.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

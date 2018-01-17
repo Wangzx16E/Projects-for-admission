@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: bookcash - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Owner\AppData\Local\Temp\RSP83D9.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/bookcash.pdb" /debug /machine:I386 /out:"Debug/bookcash.exe" /pdbtype:sept 
+.\Debug\BillDialog.obj
+.\Debug\bookcash.obj
+.\Debug\bookcashDlg.obj
+.\Debug\CashBase.obj
+.\Debug\CashBuyget.obj
+.\Debug\CashBuygetDlg.obj
+.\Debug\CashNone.obj
+.\Debug\CashOld.obj
+.\Debug\CashOldDlg.obj
+.\Debug\CashRebate.obj
+.\Debug\CashRebateDlg.obj
+.\Debug\CashReturn.obj
+.\Debug\CashReturnDlg.obj
+.\Debug\NewOrderDialog.obj
+.\Debug\StdAfx.obj
+.\Debug\bookcash.res
+]
+Creating command line "link.exe @C:\Users\Owner\AppData\Local\Temp\RSP83D9.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+bookcash.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
