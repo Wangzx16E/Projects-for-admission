@@ -5,4 +5,7 @@ list:
 1. C++ projects 
 2. C# for GIS system (Wuhan travel system)
 3. Housing Ipython notebook (tbd)
-4.
+
+My undergraduate thesis (ongoing)
+
+4.Object detection based on Jetson TK2 (learning process)
