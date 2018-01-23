@@ -9,6 +9,10 @@ eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 smile_cascade = cv2.CascadeClassifier('haarcascade_smile')
 
 # Defining a function that will do the detections
+# arguments of .detectMultiScale()
+# scaleFactor – Parameter specifying how much the image size is reduced at each image scale.
+# minNeighbors – Parameter specifying how many neighbors each candidate rectangle should have to retain it.
+
 def detect(gray, frame):
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
     for (x, y, w, h) in faces:
